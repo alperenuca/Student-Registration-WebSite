@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgi Alma Formu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="img/beau-carpenter-pTaQDMpOZn0-unsplash.jpg" class="bg">
+    <div class="container">
+        <div class="form-section">
+            <h2>Birinci Aşama</h2>
+            <form id="bilgiForm">
+                <input type="text" id="ad" placeholder="Adınız" required>
+                <input type="text" id="soyad" placeholder="Soyadınız" required>
+                <input type="number" id="yas" placeholder="Yaşınız" required>
+                <input type="text" id="okul" placeholder="Liseden Mezun Olduğunuz Okul" required>
+                <input type="number" id="puan" placeholder="YKS Puanınız" required>
+                <input type="text" id="iban" placeholder="6 Haneli IBAN Numaranız" required>
+                <button type="submit">Birinci Aşamayı Tamamla</button>
+            </form>
+        </div>
+    
+        <div class="form-section" id="ekBilgiler">
+            <h2>İkinci Aşama</h2>
+            <form id="ekBilgiForm">
+                <input type="text" id="telno" placeholder="Telefon Numaranız (10 haneli)" required>
+                <input type="text" id="anne" placeholder="Anne Adınız" required>
+                <input type="text" id="baba" placeholder="Baba Adınız" required>
+                <input type="text" id="adres" placeholder="Yaşadığınız İl/İlçe" required>
+                <button type="submit">İkinci Aşamayı Tamamla</button>
+            </form>
+        </div>
+    </div>
+    <div id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Bilgileriniz</h2>
+            <div id="bilgiListesi"></div>
+            <div class="modal-footer">
+                <button id="evetBtn">Evet</button>
+                <button id="hayirBtn">Hayır</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
